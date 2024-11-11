@@ -1,0 +1,122 @@
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  height: 100vh;
+}
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--yellow);
+  font-family: "Figtree";
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.card {
+  box-sizing: border-box;
+  margin: auto;
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  border: 1px solid var(--gray-950);
+  background-color: var(--white);
+  border-radius: 20px;
+  gap: 24px;
+}
+
+.card > img {
+  border-radius: 10px;
+}
+
+.categories {
+  margin-bottom: 12px;
+}
+
+.tag {
+  background-color: var(--yellow);
+  color: var(--gray-950);
+  border-radius: 4px;
+  padding: 4px 12px;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: normal;
+  font-weight: bold;
+}
+
+.release-date {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 150%;
+  letter-spacing: normal;
+  margin-bottom: 12px;
+}
+
+.post-title {
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: normal;
+  margin-bottom: 12px;
+  color: var(--gray-950);
+}
+
+.post-title:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+.post-summary {
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--gray-500);
+  text-align: left;
+  line-height: 150%;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+}
+
+.author-icon {
+  width: 32px;
+}
+.post-author {
+  font-weight: bold;
+  color: var(--gray-950);
+  padding: 12px;
+}
+
+.attribution {
+  align-self: center;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 384px;
+  }
+
+  .post-summary {
+    font-size: 16px;
+  }
+}
